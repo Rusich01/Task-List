@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Playwrite+GB+S&display=swap");
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  font-family: "Playwrite GB S", cursive;
+}
+
+button {
+  font-weight: 600;
+  border-radius: 10px;
+  transform: scale(0.9);
+  transition: 0.2s;
+  padding: 5px;
+  margin: 5px;
+  background: linear-gradient(
+    90deg,
+    rgba(64, 238, 69, 1) 0%,
+    rgba(48, 204, 79, 1) 40%,
+    rgba(0, 212, 255, 1) 100%
+  );
+}
+button:hover {
+  transform: scale(1);
+}
+input {
+  width: 70%;
+  border-radius: 10px;
+  padding: 5px;
+}
+.center {
+  display: flex;
+  justify-content: center;
+  margin-top: 20vh;
+}
+.toDoContainer {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  padding-bottom: 20vh;
+  border: 1px solid black;
+  border-radius: 10px;
+  background: linear-gradient(
+    90deg,
+    rgba(123, 120, 182, 1) 0%,
+    rgba(86, 170, 103, 1) 54%,
+    rgba(0, 212, 255, 1) 87%
+  );
+}
+.list__toDo {
+  display: flex;
+  position: relative;
+  padding: 10px 0;
+  margin: 10px 0;
+}
+.text__todo {
+  width: 75%;
+  margin: 0;
+  padding: 0;
+  word-wrap: break-word;
+}
+button {
+  margin-left: 20px;
+}
+.btn__delete {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
